@@ -10,6 +10,8 @@ const guildId = process.env.DISCORD_GUILD_ID;
 const commands = [];
 const GuildCommands = [];
 
+
+
 // Grab all the command folders from the commands directory you created earlier
 const commandsPath = path.join(__dirname, "commands");
 const commandFiles = fs
