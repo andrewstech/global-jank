@@ -1,0 +1,24 @@
+{
+  "name": "global-jank",
+  "version": "1.0.0",
+  "description": "Janky version of globalchat for discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewstech/global-jank.git"
+  },
+  "author": "andrewstech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewstech/global-jank/issues"
+  },
+  "homepage": "https://github.com/andrewstech/global-jank#readme",
+  "dependencies": {
+    "discord.js": "^14.15.2",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.3.4"
+  }
+}
