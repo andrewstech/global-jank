@@ -5,6 +5,7 @@ const MessagesSchema = new mongoose.Schema({
     messageID: String, // Message ID
     userID: String, // User ID
     messsagesIDS: Array, // Array of messages
+    channelIDS: Array, // Array of channel IDs
 });
 
 module.exports = mongoose.model("messages", MessagesSchema, "messages");

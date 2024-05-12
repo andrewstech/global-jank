@@ -14,6 +14,14 @@ module.exports = {
     async execute(interaction) {
         const channel = interaction.options.getChannel("channel");
 
+        // check user has permissions to manaage server
+        if (!interaction.member.permissions.has("MANAGE_GUILD")) {
+            return await interaction.reply({
+                content: "You do not have permission to use this command.",
+                ephemeral: true,
+            });
+        }
+
        
         // make a webhook in the channel
         const webhook = await channel.createWebhook({
