@@ -3,6 +3,7 @@ const messagesModel = require("../models/messages");
 const Discord = require("discord.js");
 const uuid = require("uuid");
 const Reply = require("./reply");
+const swearjar = require("swearjar");
 
 
 async function Message(message) {
@@ -30,9 +31,10 @@ async function Message(message) {
         }
         const webhook = new Discord.WebhookClient({ url: channel.webhookURL });
         let sentMessage = null;
+        let messageContent = await swearjar.censor(message.content);
         try {
                 sentMessage = await webhook.send({
-                content: message.content,
+                content: messageContent,
                 username: message.author.username,
                 avatarURL: message.author.displayAvatarURL(),
                 allowedMentions: { parse: [] },
