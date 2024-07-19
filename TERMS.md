@@ -1,6 +1,6 @@
 **Terms and Conditions for GlobalJank**
 
-Effective Date: [Insert Effective Date]
+Effective Date: 19th of July 2024
 
 Welcome to GlobalJank! By using the GlobalJank Discord bot ("GlobalJank", "we", "us", or "our"), you agree to the following terms and conditions ("Terms"). Please read these Terms carefully before using GlobalJank.
 
