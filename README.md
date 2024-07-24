@@ -1,2 +1,2 @@
 # global-jank
-A janky version of Global chat for Discord
+A janky version of Global chat for Discord!
